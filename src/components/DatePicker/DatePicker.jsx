@@ -190,6 +190,7 @@ export const DatePicker = ({
                     todayButton={variant === "single" ? "Today" : undefined}
                     selectedDays={value}
                     month={currentMonth}
+                    fromMonth={currentMonth}
                     modifiers={{ ...modifiers, ...rangeModifier }}
                     numberOfMonths={isRangeVariant ? 2 : 1}
                     disabledDays={disabledDays}
