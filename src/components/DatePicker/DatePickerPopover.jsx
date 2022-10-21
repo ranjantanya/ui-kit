@@ -76,7 +76,6 @@ export const DatePickerPopover = ({
                     components={components}
                     onChange={handleChange}
                     onSubmitDateRange={handleSubmitDateRange}
-                    month={month}
                     {...rest}
                 />
             </Popover.Content>
