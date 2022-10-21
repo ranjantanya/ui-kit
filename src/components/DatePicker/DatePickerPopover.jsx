@@ -17,6 +17,7 @@ export const DatePickerPopover = ({
     components = {},
     popoverProps,
     getDayContent,
+    month = null,
     ...rest
 }) => {
     const [originalValue, setOriginalValue] = useState(value);
@@ -76,6 +77,7 @@ export const DatePickerPopover = ({
                     components={components}
                     onChange={handleChange}
                     onSubmitDateRange={handleSubmitDateRange}
+                    month={month}
                     {...rest}
                 />
             </Popover.Content>
