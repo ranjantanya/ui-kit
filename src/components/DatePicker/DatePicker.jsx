@@ -35,11 +35,10 @@ export const DatePicker = ({
     components = {},
     getTooltip,
     upcomingDates,
-    month = null,
     ...rest
 }) => {
     const initialValue = variant === variants.single ? value : value.from;
-    const [currentMonth, setCurrentMonth] = useState(month ?? initialValue);
+    const [currentMonth, setCurrentMonth] = useState(initialValue);
     const [rangeName, setRangeName] = useState("");
     const isRangeVariant = variant === variants.range;
 
